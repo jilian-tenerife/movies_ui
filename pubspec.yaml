@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   introduction_screen: ^3.1.6
   google_fonts: ^4.0.3
+  glassmorphism: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -74,6 +75,21 @@ flutter:
     - assets/mask_firstIndex.png
     - assets/mask_lastIndex.png
     - assets/mask.png
+    - assets/back.png
+    - assets/download (2).png
+    - assets/downloads.png
+    - assets/home.png
+    - assets/image 78.png
+    - assets/image 79.png
+    - assets/image 80.png
+    - assets/play.png
+    - assets/play2.png
+    - assets/settings (2).png
+    - assets/symbol.png
+    
+   
+    
+
     
     
 
