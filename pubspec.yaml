@@ -70,6 +70,11 @@ flutter:
     - assets/image 92.png
     - assets/image 93.png
     - assets/image 94.png
+    - assets/mask_cast.png
+    - assets/mask_firstIndex.png
+    - assets/mask_lastIndex.png
+    - assets/mask.png
+    
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

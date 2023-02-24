@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 
 import 'package:movies_ui/contants.dart';
 
+import '../components/mask_image.dart';
+import '../data/movie.dart';
+
 class homescreen extends StatelessWidget {
   const homescreen({super.key});
 
@@ -156,6 +159,82 @@ class homescreen extends StatelessWidget {
                   const SizedBox(
                     height: 37,
                   ),
+                  SizedBox(
+                    height: 160,
+                    child: ListView.builder(
+                      shrinkWrap: true,
+                      scrollDirection: Axis.horizontal,
+                      itemCount: newMovies.length,
+                      itemBuilder: (context, index) {
+                        String mask;
+                        if (index == 0) {
+                          mask = Constants.kMaskFirstIndex;
+                        } else if (index == newMovies.length - 1) {
+                          mask = Constants.kMaskLastIndex;
+                        } else {
+                          mask = Constants.kMaskCenter;
+                        }
+                        return GestureDetector(
+                          child: Container(
+                            margin: EdgeInsets.only(
+                              left: index == 0 ? 20 : 0,
+                            ),
+                            height: 160,
+                            width: 142,
+                            child: MaskedImage(
+                              asset: newMovies[index].moviePoster,
+                              mask: mask,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 39,
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(left: 20.0),
+                    child: Text(
+                      'Upcoming Movies',
+                      style: TextStyle(
+                        color: Constants.kWhiteColor,
+                        fontSize: 17,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 37,
+                  ),
+                  SizedBox(
+                      height: 160,
+                      child: ListView.builder(
+                          shrinkWrap: true,
+                          scrollDirection: Axis.horizontal,
+                          itemCount: upcomingMovies.length,
+                          itemBuilder: (context, index) {
+                            String mask;
+                            if (index == 0) {
+                              mask = Constants.kMaskFirstIndex;
+                            } else if (index == upcomingMovies.length - 1) {
+                              mask = Constants.kMaskLastIndex;
+                            } else {
+                              mask = Constants.kMaskCenter;
+                            }
+                            return GestureDetector(
+                              child: Container(
+                                margin: EdgeInsets.only(
+                                  left: index == 0 ? 20 : 0,
+                                ),
+                                height: 160,
+                                width: 142,
+                                child: MaskedImage(
+                                  asset: upcomingMovies[index].moviePoster,
+                                  mask: mask,
+                                ),
+                              ),
+                            );
+                          }))
                 ],
               ),
             ),
