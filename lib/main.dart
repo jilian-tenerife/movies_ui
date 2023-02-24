@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movies_ui/screens/homescreen.dart';
 import 'package:movies_ui/screens/onboarding_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,8 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        textTheme: GoogleFonts.openSansTextTheme(Theme.of(context).textTheme),
+      ),
       initialRoute: 'onBoarding',
       routes: {
         'onBoarding': (context) => OnboardingScreen(),
