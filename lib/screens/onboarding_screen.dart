@@ -164,7 +164,10 @@ class OnboardingScreen extends StatelessWidget {
                                     ],
                                   ),
                                 ),
-                                child: const Center(
+                                child: TextButton(
+                                  onPressed: () {
+                                    Navigator.pushNamed(context, 'homescreen');
+                                  },
                                   child: Text(
                                     'Sign Up',
                                     style: TextStyle(

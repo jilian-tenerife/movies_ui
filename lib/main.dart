@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movies_ui/screens/homescreen.dart';
 import 'package:movies_ui/screens/onboarding_screen.dart';
 
 void main() {
@@ -13,7 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: OnboardingScreen(),
+      initialRoute: 'onBoarding',
+      routes: {
+        'onBoarding': (context) => OnboardingScreen(),
+        'homescreen': (context) => homescreen(),
+      },
     );
   }
 }
