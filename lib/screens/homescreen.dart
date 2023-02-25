@@ -176,6 +176,9 @@ class homescreen extends StatelessWidget {
                           mask = Constants.kMaskCenter;
                         }
                         return GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(context, 'movie_detail');
+                          },
                           child: Container(
                             margin: EdgeInsets.only(
                               left: index == 0 ? 20 : 0,

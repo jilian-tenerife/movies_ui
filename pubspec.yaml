@@ -39,6 +39,7 @@ dependencies:
   introduction_screen: ^3.1.6
   google_fonts: ^4.0.3
   glassmorphism: ^3.0.0
+  flutter_rating_bar: ^4.0.1
 
 dev_dependencies:
   flutter_test:
@@ -86,6 +87,8 @@ flutter:
     - assets/play2.png
     - assets/settings (2).png
     - assets/symbol.png
+    - assets/image 76.png
+    - assets/image 77.png
     
    
     

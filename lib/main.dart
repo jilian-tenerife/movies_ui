@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movies_ui/screens/homescreen.dart';
+import 'package:movies_ui/screens/movie_detail.dart';
 import 'package:movies_ui/screens/onboarding_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         'onBoarding': (context) => OnboardingScreen(),
         'homescreen': (context) => homescreen(),
+        'movie_detail': (context) => movie_detail(),
       },
     );
   }
