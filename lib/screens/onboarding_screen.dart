@@ -33,7 +33,7 @@ class OnboardingScreen extends StatelessWidget {
                           width: 166,
                           decoration: const BoxDecoration(
                             shape: BoxShape.circle,
-                            color: Constants.kPinkColor,
+                            color: Constants.kBlackColor,
                           ),
                           child: BackdropFilter(
                             filter: ImageFilter.blur(
